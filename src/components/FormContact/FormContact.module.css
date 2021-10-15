@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.label {
+  padding: 10px;
+}
+
+.input {
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.btn {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: lightblue;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn:focus,
+.btn:hover {
+  background-color: #5187ec;
+  box-shadow: 0 3px 6px black;
+}
