@@ -47,12 +47,12 @@ class App extends Component {
     ) {
       alert(`${name} is already in contacts`);
     }
-    // else if (
-    //   contacts.find(
-    //     ({ number }) => number.toUpperCase() === contact.number.toUpperCase(),
-    //   )) {
-    //   alert(`${number} is already in contacts`);
-    // }
+    else if (
+      contacts.find(
+        ({ number }) => number.toUpperCase() === contact.number.toUpperCase(),
+      )) {
+      alert(`${number} is already in contacts`);
+    }
     else {
       this.setState(({ contacts }) => ({
         contacts: [contact, ...contacts],
